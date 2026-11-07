@@ -1,0 +1,39 @@
+﻿{
+    "name":  "apirecon",
+    "version":  "0.1.0",
+    "description":  "See the API behind the page: network capture, GraphQL introspection, JS endpoint mining and a self-contained HTML report.",
+    "type":  "module",
+    "bin":  {
+                "apirecon":  "dist/cli.js"
+            },
+    "files":  [
+                  "dist",
+                  "README.md",
+                  "LICENSE"
+              ],
+    "scripts":  {
+                    "build":  "tsc",
+                    "scan":  "node dist/cli.js",
+                    "demo":  "node demo/server.mjs",
+                    "test":  "node --test test/report.test.mjs"
+                },
+    "engines":  {
+                    "node":  "\u003e=18"
+                },
+    "keywords":  [
+                     "api",
+                     "recon",
+                     "graphql",
+                     "security",
+                     "puppeteer",
+                     "reverse-engineering"
+                 ],
+    "license":  "MIT",
+    "dependencies":  {
+                         "puppeteer-core":  "^25.16.0"
+                     },
+    "devDependencies":  {
+                            "@types/node":  "^26.6.6",
+                            "typescript":  "^7.0.2"
+                        }
+}
